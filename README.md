@@ -1,5 +1,7 @@
 # Threat Hunt Report: Persistence via Windows Registry Run Key (Remcos)
 
+![image](https://github.com/user-attachments/assets/9d18a0b9-2c4c-4452-aea6-e0f99e176dbb)
+
 
 
 - [Scenario Creation](https://github.com/aduragbemioo/Threat-Event-Persistence-via-Windows-Registry-Run-Key-/blob/main/scenario.md)
