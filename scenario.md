@@ -20,7 +20,7 @@ Several users reported unusual pop-ups and high CPU usage on startup. Additional
    * Initial compromise via phishing or malicious download.
 
 2. **Drop Payload to Local AppData Folder**  
-   * Example: `remcos.exe` dropped at  
+   * `remcos.exe` dropped at  
      `C:\Users\<user>\AppData\Roaming\Microsoft\remcos.exe`
 
 3. **Create Registry Entry for Persistence**  
