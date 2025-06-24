@@ -71,11 +71,14 @@ DeviceNetworkEvents
 | where InitiatingProcessFileName =~ "remcos.exe"
 | project Timestamp, DeviceName, RemoteIP, RemotePort, InitiatingProcessFileName, InitiatingProcessCommandLine
 
+````
+
+---
 
 ## 👤 Created By
 
-* **Author**: Aduragbemi Opeyemi Adewole
-* **LinkedIn**: [aduragbemi-oladapo](https://www.linkedin.com/in/aduragbemi-oladapo/)
+* **Author**: Aduragbemi
+* **LinkedIn**: [aduragbemi-oladapo](https://www.linkedin.com/in/aduragbemioladapo/)
 * **Date**: June 23, 2025
 
 ---
@@ -108,4 +111,3 @@ DeviceNetworkEvents
 ---
 
 ```
-
