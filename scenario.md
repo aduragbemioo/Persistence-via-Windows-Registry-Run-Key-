@@ -20,7 +20,7 @@ Several users reported unusual pop-ups and high CPU usage on startup. Additional
    * Initial compromise via phishing or malicious download.
 
 2. **Drop Payload to Local AppData Folder**  
-   * `remcos.exe` dropped at  
+   * `remcos.exe` dropped at  (Remcos is a remote access trojan (RAT), Note: No real trojan was used in this hunt)
      `C:\Users\<user>\AppData\Roaming\Microsoft\remcos.exe`
 
 3. **Create Registry Entry for Persistence**  
