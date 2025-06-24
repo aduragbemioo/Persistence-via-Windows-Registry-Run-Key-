@@ -1,6 +1,3 @@
-Here's your **Threat Hunt Scenario** fully converted into clean, professional **Markdown format**:
-
-````markdown
 # Threat Hunt Scenario: Windows Registry Persistence
 
 ## 🎯 Threat Event: Persistence via Windows Registry Run Key
@@ -73,9 +70,7 @@ DeviceProcessEvents
 DeviceNetworkEvents
 | where InitiatingProcessFileName =~ "remcos.exe"
 | project Timestamp, DeviceName, RemoteIP, RemotePort, InitiatingProcessFileName, InitiatingProcessCommandLine
-````
 
----
 
 ## 👤 Created By
 
