@@ -102,8 +102,8 @@ DeviceNetworkEvents
 
 ---
 
-💻 PowerShell Script: Simulated Persistence via Registry Run Key
-
+💻 PowerShell Simulation Script: Simulated Persistence via Registry Run Key
+```powershell
 # Variables
 $dummyExePath = "$env:APPDATA\Microsoft\remcos.exe"
 $runKeyPath = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Run"
@@ -130,7 +130,7 @@ Remove-ItemProperty -Path $runKeyPath -Name $runKeyName -Force
 Remove-Item $dummyExePath -Force
 
 Write-Output "[+] Done."
-
+```
 
 📝 Script Summary
 This PowerShell script:
