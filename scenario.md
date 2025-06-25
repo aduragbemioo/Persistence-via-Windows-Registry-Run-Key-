@@ -102,6 +102,51 @@ DeviceNetworkEvents
 
 ---
 
+💻 PowerShell Script: Simulated Persistence via Registry Run Key
+powershell
+Copy
+Edit
+# Variables
+$dummyExePath = "$env:APPDATA\Microsoft\remcos.exe"
+$runKeyPath = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Run"
+$runKeyName = "remcos"
+
+# Step 1: Copy Dummy Executable
+Write-Output "`n[*] Copying dummy executable..."
+Copy-Item "C:\Windows\System32\notepad.exe" -Destination $dummyExePath -Force
+
+# Step 2: Add Registry Run Key for Persistence
+Write-Output "[*] Adding registry Run key..."
+New-ItemProperty -Path $runKeyPath -Name $runKeyName -Value $dummyExePath -PropertyType "String" -Force
+
+# Step 3: Launch Dummy Payload
+Write-Output "[*] Launching the dummy payload..."
+Start-Process $dummyExePath
+
+# Step 4: Wait for Observation or Simulation
+Start-Sleep -Seconds 10
+
+# Step 5: Cleanup Artifacts
+Write-Output "[*] Cleaning up..."
+Remove-ItemProperty -Path $runKeyPath -Name $runKeyName -Force
+Remove-Item $dummyExePath -Force
+
+Write-Output "[+] Done."
+📝 Script Summary
+This PowerShell script:
+
+Simulates a malicious file drop by copying notepad.exe to a suspicious path.
+
+Adds a Run key to simulate persistence in the Windows Registry.
+
+Executes the dummy payload (notepad.exe).
+
+Waits for 10 seconds.
+
+Cleans up the registry key and file.
+
+⚠️ Note: This script is safe for lab environments and does not download or run malicious code. Always use such simulations in isolated test environments.
+
 ## 📅 Revision History
 
 | Version | Changes       | Date          | Modified By                |
