@@ -78,7 +78,7 @@ DeviceNetworkEvents
 ## 👤 Created By
 
 * **Author**: Aduragbemi
-* **LinkedIn**: [aduragbemi-oladapo](https://www.linkedin.com/in/aduragbemioladapo/)
+* **LinkedIn**: [Aduragbemi Oladapo](https://www.linkedin.com/in/aduragbemioladapo/)
 * **Date**: June 23, 2025
 
 ---
@@ -106,7 +106,7 @@ DeviceNetworkEvents
 
 | Version | Changes       | Date          | Modified By                |
 | ------- | ------------- | ------------- | -------------------------- |
-| 1.0     | Initial Draft | June 23, 2025 | Aduragbemi Opeyemi Adewole |
+| 1.0     | Initial Draft | June 23, 2025 | Aduragbemi Oladapo |
 
 ---
 
