@@ -42,7 +42,7 @@ DeviceProcessEvents
 ![image](https://github.com/user-attachments/assets/a22e0aaf-fc3d-486f-8619-3af9875d6aa9)
 
 
-### 2. Searched for Suspicious .exe Drops via PowerShell
+### 2. Searched `DeviceFileEvents` for Suspicious .exe Drops via PowerShell
 
 Investigated .exe files dropped in non-standard folders often used for malware persistence. Discovered a suspicious file: remcos.exe, created via powershell.
 ```kql
@@ -75,7 +75,7 @@ DeviceRegistryEvents
 ```
 ![image](https://github.com/user-attachments/assets/37c8b5c5-88af-4bff-a017-14ac57b1f9c4)
 
-### 4. Checked for Execution of remcos.exe
+### 4. Checked `DeviceProcessEvents` for Execution of remcos.exe
 Validated that remcos.exe was executed post-persistence setup.
 
 ```kql
@@ -88,7 +88,7 @@ DeviceProcessEvents
 
 ![image](https://github.com/user-attachments/assets/0c0c6dae-dd86-4fb5-a62a-85fe1d2a43f7)
 
-### 5. Checked for Network Activity from remcos.exe
+### 5. Checked `DeviceNetworkEvents` for Network Activity from remcos.exe
 Looked for outbound network connections from the malicious binary but found none.
 ```kql
 DeviceNetworkEvents
@@ -106,7 +106,7 @@ DeviceNetworkEvents
 
 - **Timestamp:** 2025-06-23T22:28:20.4568851Z 
 - **Event:** Dropped `remcos.exe` into a non-standard directory via PowerShell.  
-- **Path:** Likely under `AppData`, `Roaming`, or similar.  
+- **Path:** C:\Users\vullab\AppData\Roaming\Microsoft\remcos.exe
 
 ---
 
