@@ -10,7 +10,7 @@
 
 ## Platforms and Tools Used
 
-- Windows 10 Virtual Machines (Microsoft Azure)
+- Windows 10 Virtual Machine (Microsoft Azure)
 - EDR Platform: Microsoft Defender for Endpoint
 - Kusto Query Language (KQL)
 - Remcos Remote Access Trojan (RAT)
