@@ -20,9 +20,9 @@
 ## Scenario
 
 **Reason for Threat Hunt:**  
-Unusual system behavior was reported by the Help Desk, including persistent pop-ups and high CPU usage during system startup. Concurrent cybersecurity threat intelligence reports indicated a surge in malware leveraging Windows Registry Run keys—specifically, campaigns involving *Agent Tesla* and *Remcos RAT*.  
+Unusual system behavior was reported by the Help Desk, including persistent pop-ups and high CPU usage during system startup. Concurrent cybersecurity threat intelligence reports indicated a surge in malware leveraging Windows Registry Run keys specifically, campaigns involving *Agent Tesla* and *Remcos RAT*.  
 
-The objective was to determine whether any persistence-based malware was present and if it leveraged Registry Run keys for execution upon reboot.
+The objective was to determine whether any persistence-based malware was present and, if so, whether it leveraged Registry Run keys for execution upon reboot.
 
 ---
 
